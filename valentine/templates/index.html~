@@ -1,0 +1,18 @@
+<form action="" name="userform" method="post">{% csrf_token %}
+Enter your mail-id:<input type="text" name="emailid" id="emailid" placeholder="enter your mailid"/></br>
+<input type="text" name="fbid1" id="fbid1" placeholder="enter your crush1 fbid" required/>
+<input type="text" name="mailid1" id="mailid1" placeholder="enter your crush1 mailid" required/></br>
+<input type="text" name="fbid2" id="fbid2" placeholder="enter your crush2 fbid"/>
+<input type="text" name="mailid2" id="mailid2" placeholder="enter your crush2 mailid"/></br>
+<input type="text" name="fbid3" id="fbid3" placeholder="enter your crush3 fbid"/>
+<input type="text" name="mailid3" id="mailid3" placeholder="enter your crush3 mailid"/></br>
+<input type="text" name="fbid4" id="fbid4" placeholder="enter your crush4 fbid"/>
+<input type="text" name="mailid4" id="mailid4" placeholder="enter your crush4 mailid"/></br>
+<input type="text" name="fbid5" id="fbid5" placeholder="enter your crush5 fbid"/>
+<input type="text" name="mailid5" id="mailid5" placeholder="enter your crush5 mailid"/></br>
+<input type="text" name="place" id="place" placeholder="enter your place" reqiured/>
+
+
+
+
+</form>

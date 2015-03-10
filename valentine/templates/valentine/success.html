@@ -1,0 +1,180 @@
+{% load staticfiles %}
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CoffeHangout with your valentine</title>
+    <link rel="shortcut icon" href="{% static 'valentine/img/hrt.ico' %}">
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'valentine/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!--ladda-->
+    <link rel="stylesheet" href="{% static 'valentine/dist/ladda.min.css' %}">  
+    <script src="{% static 'valentine/dist/spin.js' %}"></script>
+        <script src="{% static 'valentine/dist/ladda.js' %}"></script>
+
+
+    <!-- Custom CSS -->
+    <link href="{% static 'valentine/css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'valentine/css/facebook_button.css' %}" rel="stylesheet">
+   
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'valentine/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59748878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="page-top" data-spy="scroll" style="ba">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=884636264890343&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=884636264890343&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="intro" id="middle_page">
+        <div class="intro-body" >
+            <div class="container">
+                <form action="#" method="post" class="form" role="form" name="userform" id="userform">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <img src="{{profile_pic.data.url}}" height="150" width="150" />
+                        </div>
+                        
+                        <div class="col-md-4 col-lg-4 ">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 ">
+                                    <h3 ><span class="label label-primary">Your details</span></h3>
+                                    <input class="form-control" name="fbid0" id="fbid0" placeholder="Facebook username" type="text" disabled value='{{ user.get_full_name|default:user.username }}' required /><br>
+                                    <input class="form-control" name="mailid0" id="mailid0" placeholder="Your mail-id" type="email" value="{{ user.email }}" disabled autofocus/>
+                                </div>        
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-4 ">
+                            <p><br><BR>
+                               <a  href="{% url 'valentine:logout' %}" class="btn btn-social">
+                                  <i class="fa fa-sign-out"></i> Logout
+                                </a><br>
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                <hr>
+                    <div class="row">               
+                        
+<!--spinner begin-->    <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h2>Successfully conveyed your feelings </h2>
+			<p><strong>Check your mail for results and in the mean while increase your chances of getting matched by sharing</strong></p>
+	
+						
+                        </div>
+
+<div class="fb-share-button" data-href="http://coffeehangout.com" data-layout="button_count"></div><br>
+<br><br>
+<div class="fb-like-box" data-href="https://www.facebook.com/coffeehangout.valentine" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 spinner_place" >
+                            <div class="row"> 
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <img src="img/heart1.gif" alt="Loading.."/>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <p>
+                                        Please wait..<br>
+                                        We are searching matches by the email(s) provided by you.<br>
+					<div class="fb-share-button" data-href="https://coffeehangout.com" data-layout="button_count"></div>
+                                    </p>
+                                </div>
+                            </div>
+<!--spinner close-->    </div>
+
+
+<!--submit button -->                        
+                        
+
+                        
+                    </div>            
+                </form>
+
+            </div> <!-- end of container-->
+        </div>
+    </div> 
+
+
+    <!-- Footer >
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Imaginate 2015</p>
+        </div>
+    </footer -->
+
+
+    
+    <script>
+        
+       //var l = Ladda.create( document.querySelector( 'button' ) );
+       //l.start();
+       //l.stop();
+       //l.toggle();
+       //l.isLoading();
+       //progress = Math.min( progress + Math.random() * 0.1, 1 );
+       //l.setProgress( 0.5 );
+    </script >
+
+       
+
+
+
+
+    <!-- jQuery -->
+    <script src="{% static 'valentine/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'valentine/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'valentine/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'valentine/js/grayscale.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

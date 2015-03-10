@@ -1,0 +1,7 @@
+{% extends 'valentine/base.html' %}
+{% load staticfiles %}
+{% block main %}
+<h1>sucessfully added</h1>
+{{matchflag}}
+<a  href="{% url 'valentine:logout' %}"><img src="{% static 'images/fblogout.jpg'%}" alt="Login out on facebook" /></a>
+{% endblock %}

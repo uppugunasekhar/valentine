@@ -1,0 +1,122 @@
+{% load staticfiles %}
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:url" content="http://coffeehangout.com" /> 
+	<meta property="og:title" content="Coffee Hangout" />
+	<meta property="og:description" content="Why stay @ home this valentine's day...!! Go check out whether your dear, also has a crush on you and if so the later part is upto you :p ...!!" /> 
+	<meta property="og:image" content="{% static 'valentine/img/crushimage.jpg' %}"/>
+
+    <title>CoffeHangout with your valentine</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'valentine/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'valentine/css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'valentine/css/facebook_button.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'valentine/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      body {
+             overflow:hidden;
+           }
+    </style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Header -->
+    <header class="intro" id="head">
+        <div class="intro-body">
+            <div class="container" id="main_container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Valentine</h1>
+                        <p class="intro-text">Simple and secure way leading to a hangout with your crush for this Valentine's Day or any other Day.</p>
+                        <div id="self_btn">
+                        <a href="#head" class="btn btn-circle page-scroll up">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                        <a href="#about" class="btn btn-circle page-scroll down">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--features-->
+
+    
+    <!-- About Section -->
+        <section id="about" class="container content-section text-center">
+
+            <!--feature-->
+
+
+
+            <!--feature-->
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Sign up with facebook to continue</h2>  
+                        <p>
+                           <a  href="{% url 'social:begin' 'facebook' %}?next={%url 'valentine:middle' %}" class="btn btn-social btn-facebook">
+                              <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </a>
+                        </p>        
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+
+
+
+
+
+    
+    <!-- Footer >
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Imaginate 2015</p>
+        </div>
+    </footer -->
+
+    <!-- jQuery -->
+    <script src="{% static 'valentine/{% static 'valentine/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'valentine/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'valentine/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'valentine/js/grayscale.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

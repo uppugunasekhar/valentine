@@ -1,0 +1,204 @@
+{% load staticfiles %}
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="Coffee Hangout with your Crush" />
+<meta property="og:description" content="Heyy..! Why to waste this Valentines Day sitting alone @ home. Have a secret crush..? Worried about expressing your feelings..? No worries...!! We are here to express your feelings anonymously" />
+<meta property="og:url" content="http://coffeehangout.com" />
+<meta property="og:image" content="{% static 'valentine/img/cover_pic.png'%}" />	
+<meta name="google-site-verification" content="Zj7b3VZbXTgYLC0eMTBLsBuTUXLRtwwFfH5noIPZZ9U" />
+    <title>Hangout with your Secret Crush</title>
+    <link rel="shortcut icon" href="{% static 'valentine/img/hrt.ico' %}">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'valentine/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'valentine/css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'valentine/css/facebook_button.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'valentine/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      body {
+             overflow-x:hidden;
+           }
+    </style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59748878-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Header -->
+    <header class="intro" id="head">
+        <div class="intro-body">
+            <div class="container" id="main_container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Valentine</h1>
+                        <p class="intro-text">Simple and secure way leading to a hangout with your crush for this Valentine's Day or any other Day.</p>
+                        <div id="self_btn">
+                        <a href="#head" class="btn btn-circle page-scroll up">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                        <a href="#services" class="btn btn-circle page-scroll down">
+                            <i class="fa fa-angle-double-up animated"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--features-->
+
+    
+    <!-- About Section -->
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-default">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <br><br>
+                    <h2>Features</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-heart fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4><br>
+                                    <strong>Express</strong>
+                                </h4>
+                                <p>Express your feelings to your crush anonymously.</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4><br>
+                                    <strong>Notifications</strong>
+                                </h4>
+                                <p>Receive your match results with your crush through emails.</p>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-lock fa-stack-1x text-primary"></i>
+                                </span>
+                                <h4><br>
+                                    <strong>Match</strong>
+                                </h4>
+                                <p>Your identity won't be revealed unless a match happens.</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4><br>
+                                    <strong>Facebook</strong>
+                                </h4>
+                                <p>Share this application to make sure that your crush will reach us.</p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+ 
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2">
+                       <br><br><br><br><br><br>
+                        <p>
+                           <a  href="{% url 'social:begin' 'facebook' %}?next={%url 'valentine:middle' %}" class="btn btn-social btn-facebook">
+                              <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </a><br>
+			<small style="font-size:10px;">CoffeeHangout doesn't post on your timeline without your permission</small>
+                        </p>        			
+			<br>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+
+
+
+
+
+    
+    <!-- Footer >
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Imaginate 2015</p>
+        </div>
+    </footer -->
+
+    <!-- jQuery -->
+    <script src="{% static 'valentine/js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'valentine/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'valentine/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'valentine/js/grayscale.js' %}"></script>
+
+</body>
+
+</html>
+ {% endblock %}
